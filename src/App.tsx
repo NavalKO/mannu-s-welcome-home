@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,25 +16,34 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Index />} />
-            <Route path="/reasons" element={<Reasons />} />
-            <Route path="/quiz" element={<Quiz />} />
-            <Route path="/letter" element={<Letter />} />
-            <Route path="/playlist" element={<Playlist />} />
-          </Route>
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  useEffect(() => {
+    const audio = new Audio("/running-up-that-hill.mp3");
+    audio.play().catch((error) => {
+      console.log("Autoplay was prevented:", error);
+    });
+  }, []);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Index />} />
+              <Route path="/reasons" element={<Reasons />} />
+              <Route path="/quiz" element={<Quiz />} />
+              <Route path="/letter" element={<Letter />} />
+              <Route path="/playlist" element={<Playlist />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

@@ -4,8 +4,8 @@ import { Sparkles } from "lucide-react";
 
 const questions = [
   {
-    q: "What does your Captain call you?",
-    options: ["Mannu ☀️", "Sunshine 🌸", "Waffles 🧇", "All of the above 💛"],
+    q: "What does I call you?",
+    options: ["Mannu ☀️", "Fav Airhostess 🌸", "OG Actress 🧇", "All of the above 💛"],
     answer: 3,
   },
   {
@@ -20,7 +20,7 @@ const questions = [
   },
   {
     q: "What would you do in the Upside Down?",
-    options: ["Find the nearest exit 🏃‍♀️", "Make friends with a Demogorgon 🐕", "Set up a cozy corner 🛋️", "Call your Captain for backup 📞"],
+    options: ["Find the nearest exit 🏃‍♀️", "Make friends with a Demogorgon 🐕", "Set up a cozy corner 🛋️", "Call Me(Spiderman) for backup 📞"],
     answer: 3,
   },
   {
@@ -72,8 +72,8 @@ const Quiz = () => {
           {score === questions.length
             ? "Perfect score! You truly know yourself, Mannu 💛"
             : score >= 3
-            ? "So close! Your Captain knows you better though 😉"
-            : "Haha, your Captain definitely knows you better! 🤗"}
+            ? "So close! I know you better though 😉"
+            : "Haha, I definitely knows you better! 🤗"}
         </p>
         <Button onClick={restart} className="rounded-full px-6 py-5 font-sans animate-pulse-glow">
           <Sparkles size={16} className="mr-2" /> Play Again

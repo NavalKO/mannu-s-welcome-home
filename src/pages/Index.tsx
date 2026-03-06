@@ -26,8 +26,7 @@ const Index = () => {
           Welcome back to Delhi
         </p>
         <p className="text-sm text-foreground/75 font-sans leading-relaxed">
-          I know yesterday was a long and exhausting travel day. I just wanted
-          you to wake up knowing someone is really happy you reached safely.
+          I know yesterday was a long and exhausting travel day. 
         </p>
       </section>
 
@@ -45,7 +44,7 @@ const Index = () => {
       <section className="animate-fade-in" style={{ animationDelay: "0.4s", animationFillMode: "both" }}>
         <div className="bg-accent/20 rounded-xl p-5 border border-primary/15">
           <p className="text-sm text-foreground/80 font-sans leading-relaxed">
-            ❤️‍🔥 Your Captain is really proud of you for handling everything and
+            ❤️‍🔥 I'm really proud of you for handling everything and
             traveling safely. This is just a tiny corner of the internet made
             only for you — no Demogorgons allowed.
           </p>

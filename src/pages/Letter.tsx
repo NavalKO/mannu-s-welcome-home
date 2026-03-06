@@ -17,7 +17,7 @@ This little website? It's not much. It's just some code on a screen. But every p
 So rest now. Drink your tea. Watch Stranger Things (obviously). And know that no matter what dimension, timeline, or universe — someone out there thinks you're the most amazing person in all of them.
 
 Always,
-Your Captain ❤️`;
+Idiot Naval ❤️`;
 
 const Letter = () => {
   const [revealed, setRevealed] = useState(0);
